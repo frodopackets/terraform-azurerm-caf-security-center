@@ -3,7 +3,7 @@ data "azurerm_client_config" "current" {
 
 module "rg_test" {
   source  = "aztfmod/caf-resource-group/azurerm"
-  version = "0.1.1"
+
   
     prefix          = local.prefix
     resource_groups = local.resource_groups
@@ -12,7 +12,6 @@ module "rg_test" {
 
 module "la_test" {
   source  = "aztfmod/caf-log-analytics/azurerm"
-  version = "0.1.0"
   
     # convention          = local.convention
     location            = local.location
